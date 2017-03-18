@@ -23,4 +23,4 @@ Modulo TCC do Projeto IC
 •Alocar convidado(s)
 •Alterar convidado(s)
 •Remover convidado(s)
-•Orçamento das despesas do convidad
+•Orçamento das despesas do convidado
