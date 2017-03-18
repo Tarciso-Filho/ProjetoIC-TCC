@@ -1,5 +1,5 @@
 # ProjetoIC-TCC
-<b>Modulo TCC do Projeto IC</b>
+<b><i>Modulo TCC do Projeto IC</i></b>
 
 1. TCC<br>
 - Criação do TCC<br>
