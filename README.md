@@ -2,7 +2,6 @@
 Modulo TCC do Projeto IC
 
 1. TCC<br>
-
 •Criação do TCC<br>
 •Agendamento do TCC<br>
 •Remoção do TCC<br>
@@ -11,7 +10,6 @@ Modulo TCC do Projeto IC
 •Relatório individual dos TCC<br>
 
 2. BancaTCC<br>
-
 •Gerar banca<br>
 •Alocar banca ao TCC<br>
 •Alterar banca<br>
@@ -19,7 +17,6 @@ Modulo TCC do Projeto IC
 •Confirmação do servidor/discente<br>
 
 3. Convidados<br>
-
 •Alocar convidado(s)<br>
 •Alterar convidado(s)<br>
 •Remover convidado(s)<br>
