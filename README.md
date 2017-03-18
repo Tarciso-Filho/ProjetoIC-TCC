@@ -2,7 +2,7 @@
 Modulo TCC do Projeto IC
 
 1. TCC<br>
--Criação do TCC<br>
+- Criação do TCC<br>
 -Agendamento do TCC<br>
 -Remoção do TCC<br>
 -Relatório de agendamento de TCC(semanal e mensal)<br>
