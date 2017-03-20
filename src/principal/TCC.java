@@ -7,19 +7,23 @@ import java.util.Date;
 public class TCC {
 	private int id;
 	private Curso curso;
+	private Discente discente;
 	private Professor orientador; // COLOQUEI TIPO PROFESSOR E NÃO "TIPO ORIENTADOR"
-	private String autor;
+	//private String autor; NO UML NÃO TEM ESSA VÁRIAVEL
+	private String titulo;
 	private Date dataInicio;
 	private Date dataFim;
 	private BancaTCC bancaTCC = new BancaTCC();
 	
-		public TCC(int id, Curso curso, Professor orientador, String autor, Date dataInicio, Date dataFim,
+	public TCC(int id, Curso curso, Professor orientador, Discente aluno, String /*autor*/ titulo, Date dataInicio, Date dataFim,
 			BancaTCC bancaTCC) {
 		super();
 		this.id = id;
 		this.curso = curso;
+		this.discente = aluno;
 		this.orientador = orientador;
-		this.autor = autor;
+		//this.autor = autor;
+		this.titulo = titulo;
 		this.dataInicio = dataInicio;
 		this.dataFim = dataFim;
 		this.bancaTCC = bancaTCC;
@@ -40,6 +44,14 @@ public class TCC {
 	public void setCurso(Curso curso) {
 		this.curso = curso;
 	}
+	
+	public Discente getDiscente() {
+		return discente;
+	}
+
+	public void setDiscente(Discente discente) {
+		this.discente = discente;
+	}
 
 	public Professor getOrientador() {
 		return orientador;
@@ -49,12 +61,20 @@ public class TCC {
 		this.orientador = orientador;
 	}
 
-	public String getAutor() {
+	/*public String getAutor() {
 		return autor;
 	}
 
 	public void setAutor(String autor) {
 		this.autor = autor;
+	}*/
+	
+	public String getTitulo() {
+		return titulo;
+	}
+
+	public void setTitulo(String titulo) {
+		this.titulo = titulo;
 	}
 
 	public Date getDataInicio() {
