@@ -7,14 +7,14 @@ import java.util.Date;
 public class TCC {
 	private int id;
 	private Curso curso;
-	private Professor orientador; // COLOQUEI TIPO PROFESSOR E N√O "TIPO ORIENTADOR"
+	private Professor orientador; // COLOQUEI TIPO PROFESSOR E N√ÉO "TIPO ORIENTADOR"
 	private String autor;
 	private Date dataInicio;
 	private Date dataFim;
-	private List<BancaTCC> bancaTCC = new ArrayList<BancaTCC>();
+	private BancaTCC bancaTCC = new BancaTCC();
 	
 		public TCC(int id, Curso curso, Professor orientador, String autor, Date dataInicio, Date dataFim,
-			List<BancaTCC> bancaTCC) {
+			BancaTCC bancaTCC) {
 		super();
 		this.id = id;
 		this.curso = curso;
@@ -73,11 +73,11 @@ public class TCC {
 		this.dataFim = dataFim;
 	}
 
-	public List<BancaTCC> getBancaTCC() {
+	public BancaTCC getBancaTCC() {
 		return bancaTCC;
 	}
 
-	public void setBancaTCC(List<BancaTCC> bancaTCC) {
+	public void setBancaTCC(BancaTCC bancaTCC) {
 		this.bancaTCC = bancaTCC;
 	}
 	
