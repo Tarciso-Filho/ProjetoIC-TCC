@@ -3,6 +3,7 @@ import principal.BancaTCC;
 import java.awt.List;
 import java.util.ArrayList;
 import java.util.Date;
+import java.text.DateFormat;
 
 public class TCC {
 	private int id;
@@ -101,6 +102,46 @@ public class TCC {
 		this.bancaTCC = bancaTCC;
 	}
 	
+	public void gerarDeclaracaoOrientacao()
+	{
+		String declaracao = "/nDECLARAÇÃO DE PARTICIPAÇÃO DA BANCA EXAMINADORA";
+		DateFormat converter = DateFormat.getDateInstance(DateFormat.FULL);
+		
+		declaracao += "/n/nDeclaro para os devidos fins que os professores ";
+		
+		declaracao += getOrientador().getNome();
+		
+		declaracao += "participou da Banca Examinadora da Monografia de Graduação como Orientador do(a) aluno(a) ";
+		declaracao += getDiscente().getNome();
+		declaracao += "com o título ";
+		declaracao += getTitulo();
+		declaracao += " apresentado no dia ";
+		declaracao += converter.format(getDataFim().getTime());
+		
+		System.out.println(declaracao);
+	}
+	
+	public void gerarDeclaracaoDeParticipacao()
+	{
+		String declaracao = "/nDECLARAÇÃO DE PARTICIPAÇÃO DA BANCA EXAMINADORA";
+		DateFormat converter = DateFormat.getDateInstance(DateFormat.FULL);
+		
+		declaracao += "/n/nDeclaro para os devidos fins que o professor ";
+		
+		for(Servidor professor: getBancaTCC().getListaServidores())
+		{
+			declaracao += professor.getNome() + ", ";
+		}
+		
+		declaracao += "participaram da Banca Examinadora da Monografia de Graduação do(a) aluno(a) ";
+		declaracao += getDiscente().getNome();
+		declaracao += "com o título ";
+		declaracao += getTitulo();
+		declaracao += " apresentado no dia ";
+		declaracao += converter.format(getDataFim().getTime());
+		
+		System.out.println(declaracao);
+	}
 
 }
 
