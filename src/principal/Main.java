@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Main
 {
-	public static int lerNovoInteiro( int opcao ) throws InputMismatchException
+    public static int lerNovoInteiro( int opcao ) throws InputMismatchException
     {
         Scanner ler = new Scanner(System.in);
         int resultado;
