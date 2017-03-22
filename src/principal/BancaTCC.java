@@ -18,5 +18,16 @@ public class BancaTCC {
 		ListaProfessores = listaProfessores;
 		ListaConvidados = listaConvidados;
 	}
-	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public void setStringList(ArrayList<String> stringList) {
+        this.stringList = stringList;
+	}
+	public ArrayList<String> getStringList() {
+  	return new ArrayList<String>(stringList);
+}
 }
