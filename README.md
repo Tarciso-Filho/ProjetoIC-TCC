@@ -13,8 +13,8 @@
 - Gerar banca<br>
 - Alocar banca ao TCC<br>
 - Alterar banca<br>
-- Busca de servidores/discentes alocados em uma banca<br>
-- Confirmação do servidor/discente<br>
+- Busca de servidores/doscentes alocados em uma banca<br>
+- Confirmação do servidor/doscente<br>
 
 3. ConvidadosTCC<br>
 - Alocar convidado(s)<br>
